@@ -1,0 +1,3 @@
+Total Revenue: 1245
+Total Cost: 720
+Total Profit: 525
