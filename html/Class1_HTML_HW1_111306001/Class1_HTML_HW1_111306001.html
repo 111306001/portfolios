@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<form method="post" action="http://www.deitel.com">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Feedback Form</title>
+		<tr><h1>Feedback Form</h1></tr>
+		<tr>Please fill out this form to help us improve our site.</tr>
+	</head>
+	<body>
+		<p>Name:
+			<label>
+			<input name = "name" type="text">
+			</label>
+		</p>
+		<p>
+			<tr>Comments:</tr>
+			<br>
+			<textarea rows="4" cols="50">Enter comments here.</textarea>
+		</p>
+		<p>E-mail Address:
+			<input name = "E-mail Address" type="text">
+		</p>
+		<p>
+			<tr><h3>Things you liked:</h3></tr>
+			<tr>Site design 
+				<input type="checkbox" name="Things you liked" value="Site design">
+				Links
+				<input type="checkbox" name="Things you liked" value="Links">
+				Each of use
+				<input type="checkbox" name="Things you liked" value="Each of use">
+				Images
+				<input type="checkbox" name="Things you liked" value="Images">
+				Source code
+				<input type="checkbox" name="Things you liked" value="Source code">
+			</tr>
+		</p>
+		<p>
+			<tr><h3>How did you get to our site?:</h3></tr>
+			<tr>Search engine
+				<input type="radio" name="How did you get to our site?" value="Search engine">
+				Links from another site
+				<input type="radio" name="How did you get to our site?" value="Links from another site">
+				Deitel.com Web site
+				<input type="radio" name="How did you get to our site?" value="Deitel.com Web site">
+				Reference in a book
+				<input type="radio" name="How did you get to our site?" value="Reference in a book">
+				Other
+				<input type="radio" name="How did you get to our site?" value="Other">
+			</tr>
+		</p>
+		<p>
+			Rate our site:
+			<select name="Rate">
+				<option value="Amazing">Amazing</option>
+				<option value="Good">Good</option>
+				<option value="Bad">Bad</option>
+			</select>
+		</p>		<p>
+			<input type="Submit" value="Submit">
+			<input type="reset" value="Clear">
+		</p>
+		
+</html>
+
+<html>
+	<table border="1">
+		<thead>
+			<th colspan="3">About--111306001</th>
+		</thead>
+		<tbody>
+			<tr >
+				<td rowspan="4">
+					<img src="photo.jpg" alt="photo">
+					<br>
+					personal photo
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<label>Name:
+						<input name = "name" type="text">
+						<br>
+						Gender: 
+						<input type="radio" name="Gender" value="Male">Male
+						<input type="radio" name="Gender" value="Female">Female
+						<input type="radio" name="Gender" value="Other">Other
+						
+					</label>
+				</td>
+			</tr>
+			<tr>
+				<td>Country type:
+					<select name="Country">
+						<option value="Taipei">Taipei</option>
+						<option value="Japan">Japan</option>
+						<option value="Korea">Korea</option>
+					</select>
+				</td>
+				<td>Birthday:
+					<input type="date" name="Birthday">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">E-mail:
+					<input name = "E-mail" type="text">
+				</td>
+			</tr>
+			<tr>
+				<td>Hobby</td>
+				<td colspan="2">
+					<input type="checkbox" name="Hobby" value="Swimming">Swimming
+					<input type="checkbox" name="Hobby" value="Volleyball">Volleyball
+					<input type="checkbox" name="Hobby" value="Movie">Movie
+					<input type="checkbox" name="Hobby" value="Game">Game
+					<input type="checkbox" name="Hobby" value="Sleep">Sleep 
+				</td>
+			</tr>
+			<tr>
+				<td>Skill</td>
+				<td colspan="2">
+					<input type="checkbox" name="Skill" value="Java">Java
+					<input type="checkbox" name="Skill" value="HTML">HTML
+					<input type="checkbox" name="Skill" value="Python">Python
+					<input type="checkbox" name="Skill" value="Microsoft Office">Microsoft Office
+					<input type="checkbox" name="Skill" value="Premiere">Premiere
+				</td>
+			</tr>
+			<tr>
+				<td>Say Something</td>
+				<td colspan="2">
+					<input name = "Say Something" type="text" value="Say something here.">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4">
+					<input type="Submit">
+					<input type="reset">
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS_HW</title>
+</head>
+<body>
+    <script>
+        var rand = Math.floor((Math.random()*10)+1);
+            while(input != rand){
+            var input = window.prompt("Please enter a number between 1 and 10.");
+            
+            if(input != rand){
+                window.alert("Wrong, try again");  
+            }
+            else{
+                document.write('Answer is ' + rand);
+            }
+        }
+        
+    </script>
+</body>
+</html>

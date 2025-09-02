@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<form method="post" action="http://www.deitel.com">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PurchasingSystem</title>
+	<h1>Purchasing System</h1>
+</head>
+<body>
+    <p>
+		<label>Employee Number:
+			<input type="text" name="EmployeeNumber" placeholder="B00000">
+		</label>
+	</p>
+    <p>
+		<label>Order Number:
+			<input type="text" name="OrderNumber" placeholder="AAA00000000">
+		</label>
+	</p>
+    <p>
+		<label>Producer:
+			<input type="text" name="Producer">
+		</label>
+	</p>
+    <p>
+		<label>Times of Deliveries:
+			<br>
+            <select id="operate" name="method">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+		</label>
+	</p>
+    <p>
+		<label>Product Specifications:
+			<br>
+			<blockquote>
+				Produce Date: 
+				<input type="date" name="ProduceDate">
+				(yyyy-mm-dd)
+				<br>
+				Product Description: 
+				<br>
+				<textarea rows="5" cols="100"></textarea>
+				<br>
+				Ingredient: 
+				<br>
+				<textarea rows="5" cols="100"></textarea>
+			</blockquote>
+		</label>
+	</p>
+	<p>
+		<label>
+			<input type="Submit" value="Submit">
+			<input type="reset" value="Clear">
+		</label>
+	</p>
+	<?php
+		
+	?>
+</body>
+</html>

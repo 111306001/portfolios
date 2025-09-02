@@ -1,0 +1,54 @@
+body{
+    background-color: lightcyan;
+    background-image: url(bear3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom right;
+}
+h1, i{
+    color: green;
+    font-size: 20px;
+}
+h1 em{
+    color: blueviolet;
+    margin-left: 40px;
+}
+p i{
+    color: blue;
+}
+p, em{
+    font-size: 16px;
+    font-weight: bold;
+}
+.color{
+    font-size: 12;
+    margin-left: 16px;
+    background: yellow;
+}
+#reminder{
+    background-color: black;
+    color: white;
+}
+.pucturetype1
+{
+    position: absolute;
+    top: 1250px;
+    left: 250px;
+    z-index: 2;
+}
+.pucturetype2{
+    position: absolute;
+    top: 1000px;
+    left: 150px;
+    z-index: 1;
+}
+p, h1{
+    padding: 15px 20px 50px 30px;
+    float: left;
+
+}
+div{
+    border: 2px solid gainsboro;
+    margin-top: 100px;
+    margin: 80;
+}

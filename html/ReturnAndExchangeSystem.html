@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<form method="post" action="http://www.deitel.com">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ReturnAndExchangeSystem</title>
+	<h1>Return And Exchange System</h1>
+</head>
+<body>
+    <p>
+		<label>Employee Number:
+			<input type="text" name="EmployeeNumber" placeholder="B00000">
+		</label>
+	</p>
+    <p>
+		<label>Product Number:
+			<input type="text" name="ProductNumber" placeholder="AAA00000000-0">
+		</label>
+	</p>
+    <p>
+		<label>Producer:
+			<input type="text" name="Producer">
+		</label>
+	</p>
+    <p>
+		<label>Receive Date: 
+			<input type="date" name="ReceiveDate">
+			(yyyy-mm-dd)
+		</label>
+	</p>
+    <p>
+		<label>Retrun Date: 
+			<input type="date" name="RetrunDate">
+			(yyyy-mm-dd)
+		</label>
+	</p>
+    <p>
+		<label>Problem Description: 
+			<br>
+			<blockquote>
+			    <input type="checkbox" name="Expired">
+                Expired
+			    <br>
+                <input type="checkbox" name="Fake">
+                Fake
+                <br>
+                <input type="checkbox" name="Defective">
+                Defective
+                <br>
+                <input type="checkbox" name="Other">
+			    Other Problems: 
+                <br>
+			    <textarea rows="3" cols="100" placeholder="Discribe the problems you meet..."></textarea>
+			</blockquote>
+		</label>
+	</p>
+	<p>
+		<label>
+			<input type="Submit" value="Submit">
+			<input type="reset" value="Clear">
+		</label>
+	</p>
+	<?php
+		
+	?>
+</body>
+</html>

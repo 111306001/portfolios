@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<form method="post" action="http://www.deitel.com">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Index</title>
+	<h1>New HTML5 Input Types Demo</h1>
+</head>
+<body>
+	<p style="color: blue;">
+		<h1><i>
+			This form demonstrates the new HTML5 input types and the placeholder, required and autofocus attribute. 
+		</i></h1>
+	</p>
+	<p>
+		<i>
+			<label id="reminder"><span style="color: purple;">Color: </span>
+				<input type="Color" autofocus required />
+				(Hexadecimal code such as #ADD8E6)
+			</label>
+		</i>
+	</p>
+	<p>
+		<label class="color">Date:
+			<input type="date" id="reminder" name="date">
+			(yyyy-mm-dd)
+		</label>
+	</p>
+	<p>
+		<label id="reminder">Email: 
+			<input type="text" name="Email" placeholder="name@domain.com" required>
+			(name@domain.com)
+		</label>
+	</p>
+	<p>
+		<label style="color:lightblue;">Number: 
+			<input type="number" id="reminder" name="quntity" min="0" max="7" value="4">
+			<span class="color">(Enter a number between 0 and 7)</span>
+		</label>
+	</p>
+	<p>
+		<i>
+			<label>Range: 0
+				<input type="range" id="reminder" name="range" min="0" max="20"> 20
+			</label>
+		</i>
+	</p>
+	<p>
+		<label id="reminder">Search: 
+			<input type="text" name="Search" placeholder="search query">
+		</label>
+	</p>
+	<p>
+		<label>Time: 
+			<input type="time" id="reminder" name="time">
+			(hh:mm)
+		</label>
+	</p>
+	<p>
+		<label>
+			<input type="Submit" value="Submit">
+			<input type="reset" value="Clear">
+		</label>
+	</p>
+	<p>
+		<a href="Lab2-2.html">Next</a>
+	</p>
+	<div>
+		<img img src="bear4.png" alt="bear4">
+	</div>
+</body>
+</html>
