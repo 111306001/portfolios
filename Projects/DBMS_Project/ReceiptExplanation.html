@@ -1,0 +1,26 @@
+<?php
+session_start();
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt Explanation</title>
+</head>
+<body>
+    <div class="container">
+            <form method="POST" action="ReceiptExplanation.php">
+            <table border="1">
+            <tr><th>Date: </th><td><input type="date" id="date" name="date[]"></td></tr>
+            <tr><th>Invoice Number</th><td><input type="text" id="invoice_number" name="invoice_number[]"></td></tr>
+            <tr><th>Total amount of receipt: </th><td><input type="text" id="total_amount_of_receipt" name="total_amount_of_receipt[]"></td></tr>
+            <tr><th>Cost category: </th><td><input type="text" id="cost_category" name="cost_category[]"></td></tr>
+            <tr><th>Purpose: </th><td><input type="text" id="purpose" name="purpose[]"></td></tr>
+            <tr><th>Note: </th><td><input type="text" id="note" name="note[]"></td></tr>
+            </table><br>
+            <button type="submit" class="submitbtn">Submit</button>
+            </form>
+    </div>
+</body>
+</html>

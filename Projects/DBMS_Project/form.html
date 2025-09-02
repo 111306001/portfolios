@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+        function searchPlan() {
+            var keyword = $('#plan_name_keyword').val();
+            var planNumber = $('#plan_number').val();
+
+            $.ajax({
+                url: 'SearchPlan.php',
+                type: 'GET',
+                data: {
+                    plan_name_keyword: keyword,
+                    plan_number: planNumber
+                },
+                success: function(response) {
+                    $('#results').html(response);
+                }
+            });
+        }
+
+        $(document).ready(function() {
+            $('#plan_name_keyword').on('input', searchPlan);
+            $('#plan_number').on('input', searchPlan);
+        });
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <form method="POST" action="form.php">
+                <table border="1">
+                <tr>
+                    <th>Date: </th>
+                    <td>
+                        <input type="date" id="date" name="print_date">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Title: </th>
+                    <td>
+                        <input type="text" id="title" name="title" value="國立政治大學112學年度第2學期">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Reason: </th>
+                    <td>
+                        Plan number: <input type="text" id="plan_number" name="plan_number"> 
+                        <div>
+                            <label for="plan_name_keyword">Plan keyword:</label>
+                            <input type="text" id="plan_name_keyword" name="plan_name_keyword">
+                            <br>
+                            <button type="button" class="btn" onclick="searchPlan()">Search</button>
+                        </div>
+                        <br>
+                        Budge subject: 
+                        <select id="budget_subject" name="budget_subject">
+                            <option value="transportation">Transportation</option>
+                            <option value="meal">Meal</option>
+                            <option value="office_supplies">Office supplies</option>
+                            <option value="lecturer_fee">Lecturer's fee</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="personnel">Personnel</label></th>
+                    <td>
+                        <select id="personnel">
+                            <option value="staff">staff</option>
+                            <option value="student">student</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="id-number">Staff ID/Student ID: </label></th>
+                    <td><input type="text" id="id-number" placeholder="Maintenance of data for off-campus personnel"></td>
+                </tr>
+                <tr>
+                    <th><label for="name">Name: </label></th>
+                    <td><input type="text" id="name"></td>
+                </tr>
+                <tr>
+                    <th><label for="account">Account: </label></th>
+                    <td><input type="text" id="account"></td>
+                </tr>
+                <tr>
+                    <th><label for="PayableDate">Payable Date: </label></th>
+                    <td>
+                        <input type="date" id="PayableDate" name="PayableDate">
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="item">Item: </label></th>
+                    <td>
+                        <select id="item">
+                            <option value="0">0 Register</option>
+                            <option value="0">1 Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="payable_amount">Payable amount: </label></th>
+                    <td>
+                        <input type="text" id="payable_amount" name="payable_amount">
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="unitPrice">Unit price: </label></th>
+                    <td><input type="text" id="unitPrice"></td>
+                </tr>
+                <tr>
+                    <th><label for="quantity">Quantity: </label></th>
+                    <td><input type="number" id="quantity" name="quantity"></td>
+                </tr>
+                <tr>
+                    <th>Quantity of receipt: </th>
+                    <td>
+                        <input type="text" id="document_amount" name="document_amount">
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="amount">Total amount: </label></th>
+                    <td><input type="text" id="total_amount" name="total_amount"></td>
+                </tr>
+                <tr>
+                    <th><label for="paymentAmount">Payment amount: </label></th>
+                    <td><input type="text" id="paymentAmount"></td>
+                </tr>
+                <tr>
+                    <th><label for="remarks">Remarks: </label></th>
+                    <td><textarea id="remarks" rows="3"></textarea></td>
+                </tr>
+            </table>
+            <button type="submit" value="Submit" class="submitbtn">Submit</button>
+            <button type="reset" value="Reset" class="submitbtn">Reset</button>
+            </form>
+            <div id="results"></div>
+        </div>
+    </body>
+</html>

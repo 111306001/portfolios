@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Add</title>
+    </head>
+<body>
+    <div class="container">
+        <p>
+            Please enter the information below! 
+        </p>
+        <form method="POST" action="Add.php" >
+            <table border="1">
+            <tr>
+                <th>Date: </th>
+                <td>
+                    <input type="date" id=" date" name="print_date">
+                </td>
+            </tr>
+            <tr>
+                <th>Title: </th>
+                <td>
+                    <input type="text" id="title" name="title">
+                </td>
+            </tr>
+            <tr>
+                <th>Reason: </th>
+                <td>
+                    <input type="text" id="reason" name="reason">
+                </td>
+            </tr>
+            <tr>
+                <th>Plan name: </th>
+                <td>
+                    <input type="text" id="plan_name" name="plan_name">
+                    <p><a href="SearchPlan.html" target="_blank">Search plan</a></p>
+                </td>
+            </tr>
+        </table>
+            <button type="submit" class="btn2">Build inventory</button>
+        </form>
+    </div>
+    
+ 
+</body>
+</html>
